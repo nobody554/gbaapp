@@ -1,0 +1,58 @@
+<html manifest="gbaapp.appcache">
+<head>
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-startup-image" href="images/loader.png" />
+    <link rel="apple-touch-icon" href="images/homeicon.jpg"/>
+  
+    <title>ABD Guide</title>
+
+<script type="text/javascript">
+function updateSite(event) {
+    window.applicationCache.swapCache();
+}
+window.applicationCache.addEventListener('updateready',
+    updateSite, false);
+</script>
+	
+<script type="text/javascript">
+	function standalone() {
+		if (window.navigator.standalone)
+			{window.location = "ioshome.html"}
+		else {
+			alert('Add the Alumni Band Day Guidebook app to your home screen in order to use')
+			}
+		}
+window.addEventListener("load",standalone, false)</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2798917-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body bgcolor="black">
+<center>
+<img src="images/installheader.png">
+<BR><BR>
+<img src="images/install1.png">
+<BR><BR>
+<img src="images/install2.png">
+<BR><BR>
+<img src="images/install3.png">
+</center>
+</body>
+</html>

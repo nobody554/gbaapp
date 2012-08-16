@@ -1,0 +1,138 @@
+<html manifest="gbaapp.appcache">
+<head>
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />	
+    <link rel="apple-touch-icon" href="images/homeicon.jpg"/>
+    <link rel="apple-touch-startup-image" href="images/loader.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>ABD Guide</title>
+
+	<!-- Checks if iOS device -->
+<script type="text/javascript">
+	if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+	}
+	else {
+		document.location = "androidhome.html";
+	}
+</script>
+
+<!-- checks to see if installed on iOS devices -->
+<script type="text/javascript">
+	function standalone() {
+		if(window.navigator.standalone)
+			{
+			}
+		else {window.location = "installios.html"}} 
+			window.addEventListener("load",standalone, false)
+</script>
+
+<!-- Force cache update -->
+<script type="text/javascript">
+function updateSite(event) {
+    window.applicationCache.swapCache();
+}
+window.applicationCache.addEventListener('updateready',
+    updateSite, false);
+</script>
+
+<!-- Prevent Scrolling -->
+<script type="text/javascript">
+document.ontouchmove = function(e){ e.preventDefault(); }
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2798917-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" bgcolor="black">
+
+<center><img src="images/header.png">
+
+<table align=center border=0 bgcolor=black cellspacing=3 width=320px>
+<tr>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='info.html'">
+			<img src="images/info_logo.png" border=0>
+			<BR>
+			INFO
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='schedule.html'">
+			<img src="images/calendar_logo.png" border=0>
+			<BR>
+			SCHEDULE
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='maps.html'">
+			<img src="images/maps_logo.png" border=0>
+			<BR>
+			MAPS
+		</a>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='hotels.html'">
+			<img src="images/hotels_logo.png" border=0>
+			<BR>
+			HOTELS
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='survey.html'">
+			<img src="images/survey_logo.png" border=0>
+			<BR>
+			SURVEY
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='contact.php'">
+			<img src="images/contact_logo.png" border=0>
+			<BR>
+			CONTACT US
+		</a>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='http://www.youtube.com/user/GoinBandRaiderland'">
+			<img src="images/yt_logo.png" border=0>
+			<BR>
+			YOUTUBE
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='http://www.facebook.com/GoinBandAssociation'">
+			<img src="images/f_logo.png"  border=0>
+			<BR>
+			FACEBOOK
+		</a>
+	</td>
+	<td bgcolor="#313131" align="center" height="90px" width="33%">
+		<a onclick="parent.location='http://www.twitter.com/GoinBandAlumni'">
+			<img src="images/t_logo.png" border=0>
+			<BR>
+			TWITTER
+		</a>
+	</td>
+</tr>
+</table></center>
+</body>
+</html>

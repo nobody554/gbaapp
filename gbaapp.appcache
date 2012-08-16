@@ -1,0 +1,46 @@
+CACHE MANIFEST
+# 2012-08-15 11:17pm
+
+CACHE:
+androidhome.html
+favicon.gif
+favicon.ico
+hotels.html
+index.html
+info.html
+installios.html
+ioshome.html
+schedule.html
+tabs.js
+style.css
+offline.html
+images/info_logo.png
+images/hotels_logo.png
+images/bestwestern_logo.gif
+images/calendar_logo.png
+images/contact_logo.png
+images/embassy_logo.gif
+images/f_logo.png
+images/header.png
+images/holidayinn_logo.gif
+images/homeicon.jpg
+images/install1.png
+images/install2.png
+images/install3.png
+images/installheader.png
+images/loader.png
+images/maps_logo.png
+images/music_logo.png
+images/radisson_logo.png
+images/redroof_logo.png
+images/staybridge_logo.png
+images/survey_logo.png
+images/t_logo.png
+images/yt_logo.png
+images/offline.png
+
+FALLBACK:
+/ offline.html
+
+NETWORK:
+*

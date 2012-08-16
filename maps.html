@@ -1,0 +1,40 @@
+<html manifest="gbaapp.appcache">
+<head>
+
+	<meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="images/homeicon.jpg"/>
+    <link rel="apple-touch-startup-image" href="images/loader.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    
+    <title>ABD Guide</title>
+
+<!-- Prevent Scrolling -->
+<script type="text/javascript">
+document.ontouchmove = function(e){ e.preventDefault(); }
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2798917-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<BODY marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" bgcolor="black">
+
+<iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=205423183509052025864.0004c4e4e939479f1b582&amp;ie=UTF8&amp;ll=33.586182,-101.873807&amp;spn=0.011999,0.003476&amp;t=h&amp;output=embed"></iframe>
+<p><input class="button" type="button" value="Back" onClick="location.href='ioshome.html'"></p>
+
+</body>
+</html>
